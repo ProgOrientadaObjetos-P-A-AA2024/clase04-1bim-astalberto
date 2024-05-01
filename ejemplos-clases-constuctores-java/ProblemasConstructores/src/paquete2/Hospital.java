@@ -21,7 +21,12 @@ public class Hospital {
     
     */
     
-    
+    public Hospital(String n,String c,int nD,int nE){
+        nombre = n;
+        ciudad = c;
+        numeroDoctores = nD;
+        numeroEnfermeros = nE;
+    }
     public Hospital(){
         nombre = "na";
         ciudad = "ciu";

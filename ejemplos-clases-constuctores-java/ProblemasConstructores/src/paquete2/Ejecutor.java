@@ -5,13 +5,15 @@
  */
 package paquete2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
  */
 public class Ejecutor {
     public static void main(String[] args) {
-        
+        Scanner entrada = new Scanner (System.in);
         /*Crear un objeto y presentar los datos
         Ingresar la información por teclado.
         */
