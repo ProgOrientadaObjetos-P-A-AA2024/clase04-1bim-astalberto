@@ -1,0 +1,74 @@
+package paquete3;
+
+public class Hospital {
+
+    private String nombre;
+    private String ciudad;
+    private int numeroDoctores;
+    private int numeroEnfermeros;
+
+    public Hospital() {
+        nombre = "na";
+        ciudad = "ciu";
+        numeroDoctores = 100;
+        numeroEnfermeros = 400;
+    }
+
+    public Hospital(String n, String ciu, int doctores, int enfermeros) {
+
+        nombre = n;
+        ciudad = ciu;
+        numeroDoctores = doctores;
+        numeroEnfermeros = enfermeros;
+    }
+
+    public void establecerNombre(String n) {
+        nombre = n;
+    }
+
+    public void establecerCiudad(String n) {
+        ciudad = n;
+    }
+
+    public void establecerNumeroDoctores(int n) {
+        numeroDoctores = n;
+    }
+
+    public void establecerNumeroEnfermeros(int n) {
+        numeroEnfermeros = n;
+    }
+
+    public String obtenerNombre() {
+        return nombre;
+    }
+
+    public String obtenerCiudad() {
+        return ciudad;
+    }
+
+    public int obtenerNumeroDoctores() {
+        return numeroDoctores;
+    }
+
+    public int obtenerNumeroEnfermeros() {
+        return numeroEnfermeros;
+    }
+
+    @Override
+    public String toString() {
+        // ciudad es u valor privado pero se puede utilizar en la misma clase
+        // obtenerCiudad() es un metodo que sirve para obtener el valor de
+        // un objeto utilizandolo para la encapsulacion del objeto
+        
+        String cadena = String.format("Nombre: %s\n"
+                + "Ciudad: %s\n"
+                + "Numero: de Doctores: %s"
+                + "\nNumero de Enfermeros: %s\n",
+                obtenerNombre(),
+                ciudad,
+                obtenerNumeroDoctores(),
+                obtenerNumeroEnfermeros());
+        return cadena;
+    }
+
+}
